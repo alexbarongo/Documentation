@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Sawasdee;
+}
+
+h1{
+	background-color: #2e3047;
+	color: #3bba9c;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	height: auto;
+	padding: 10px;
+}
+
+#navbar{
+	width: 100%;
+	padding: 5px 10px;
+	background-color: #707793;
+}
+
+#navbar .nav{
+	display: none;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.container .nav-link{
+	text-decoration: none;
+	color: #ffffff;
+	margin: 0 5px;
+	font-size: 10px;
+}
+
+.container .nav-link:hover{
+	color: #3bba9c;
+}
+
+#main-doc{
+	width: 100%;
+	margin:10px 0;
+}
+
+#intro{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 12.5px;
+	padding: 10px;
+}
+
+.main-section{
+	width: 100%;
+	padding: 10px;
+}
+
+.big-text{
+	font-size: 18px;
+	color: #3bba9c;
+	padding: 5px;
+	margin: 2px auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+hr{
+	width: 60%;
+	height: 2px;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #3bba9c;
+	border: 0;
+}
+
+#image{
+	width: 85%;
+	height: auto;
+	object-fit: cover;
+	margin: 0 7.5%;
+	padding: 10px 0;
+}
+
+.words{
+	width: 90%;
+	font-size: 14px;
+	color: #000000;
+	padding: 10px;
+	margin: 5px auto;
+}
+
+ul{
+	text-indent: 10%;
+	font-size: 14px;
+	color: #000000;
+	list-style: none;
+}
+
+span{
+	color: #2e3047;
+	font-style: italic;
+}
+
+.word{
+	width: 88%;
+	font-size: 12.5px;
+	padding: 8px;
+	margin: 0 auto;
+	color: #43455c
+}
+
+footer{
+	color: #2e3047;
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 50px;
+}
+
+footer a{
+	text-decoration: none;
+	color: #707793;
+}
+
+footer a:hover{
+	color: #3bba9c;
+}
+
+
+@media (min-width: 850px) and (max-width: 1280px){
+	h1{
+		width: 75%;
+		margin-left: 25%
+	}
+	#navbar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: auto;
+		width: 25%;
+		height: 100%;
+		padding: 5px 10px;
+		background-color: #707793;
+	}
+	#navbar .nav{
+		display: block;
+		color: #3bba9c;
+		font-size: 20px;
+		padding: 15px;
+		font-weight: bolder;
+		text-align: center;
+		text-decoration: underline;
+	}
+	.container{
+		display: grid;
+		grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 20px;
+		text-align: left;
+		float: left;
+	}
+	
+	.container .nav-link{
+		text-decoration: none;
+		color: #ffffff;
+		padding: : 15px;
+		font-size: 15px;
+		margin: 20px 0;
+	}
+	.container .nav-link:hover{
+	color: #3bba9c;
+	}
+	#main-doc{
+		margin:10px auto;
+		width: 75%;
+		margin-left: 25%
+	}
+}
